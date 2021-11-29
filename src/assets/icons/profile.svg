@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="99" viewBox="0 0 102 99">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.684" y1="1.159" x2="-0.484" y2="1.957" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#d900c7"/>
+      <stop offset="1" stop-color="#04bbff"/>
+    </linearGradient>
+  </defs>
+  <g id="Photo" transform="translate(0 -31)">
+    <rect id="Rectangle_239" data-name="Rectangle 239" width="102" height="99" rx="49.5" transform="translate(0 31)" fill="#bce0fd"/>
+    <g id="Union_1" data-name="Union 1" transform="translate(25.914 55.306)">
+      <ellipse id="Ellipse_3" data-name="Ellipse 3" cx="12.143" cy="12.413" rx="12.143" ry="12.413" transform="translate(12.737 0)" fill="url(#linear-gradient)"/>
+      <path id="Path_6" data-name="Path 6" d="M24.869,10C11.191,10,0,15.6,0,22.435v6.217H49.738V22.435C49.738,15.6,38.547,10,24.869,10Z" transform="translate(0 21.056)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
