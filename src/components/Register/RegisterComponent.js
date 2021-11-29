@@ -1,10 +1,11 @@
 import React, { Component, useState } from 'react';
-import { StyleSheet, Text, SafeAreaView, Button, View, TextInput, Pressable, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, Button, View, TextInput, Pressable, TouchableOpacity, Image } from 'react-native';
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import DropDownPicker from 'react-native-dropdown-picker';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import CollapsibleView from "@eliav2/react-native-collapsible-view";
 import LinearGradient from 'react-native-linear-gradient';
+import { Header } from 'react-native-elements';
 
 const RegisterComponent = () => {
 
@@ -36,9 +37,59 @@ const RegisterComponent = () => {
             this.scanner.reactivate()
         }, 2000);
       };
+    
+      const initialArr = [
+        {
+          id: 1,
+          color: "blue",
+          text: "text1"
+        },
+        {
+          id: 2,
+          color: "red",
+          text: "text2"
+        },
+        {
+          id: 3,
+          color: "red",
+          text: "text2"
+        },
+        {
+          id: 4,
+          color: "red",
+          text: "text2"
+        },
+        {
+          id: 5,
+          color: "red",
+          text: "text2"
+        },
+        {
+          id: 6,
+          color: "red",
+          text: "text2"
+        },
+        {
+            id: 7,
+            color: "red",
+            text: "text2"
+          }
+      ];
 
     return (
         <SafeAreaView style={styles.container}>
+                  <Header 
+        placement="left"
+        leftComponent={{ icon: 'menu', color: '#fff' }}
+        centerComponent={{ text: 'Answer Script Registration', style: { color: '#fff', fontWeight: 'bold', fontSize: 18 } }}
+        ViewComponent={LinearGradient} // Don't forget this!
+        linearGradientProps={{
+          colors: ['#9324a3', '#008fc4'],
+          start:{ y: 0.0, x: 1.0 },
+          end: { x: 0.0, y: 1.0 },
+        }}
+        containerStyle={{marginTop:Platform.OS === 'ios' ? -50 : 10}}
+      />
             <View style={{
         padding: 10}}>
             <View style={{marginTop: 10}}>
@@ -59,10 +110,10 @@ const RegisterComponent = () => {
                 <Text>Exam Series</Text>
                 <TextInput style={styles.input2} value="Mid-Term Sem V" />
             </View>
-            <View  style={{marginTop: 10, zIndex: 1000}}>
+            <View  style={{marginTop: 10, zIndex: 99999999999}}>
                 <Text>Subject</Text>
                 <DropDownPicker
-                    zIndexInverse={1000}
+                    dropDownDirection = "TOP"
                     open={open}
                     value={value}
                     items={items}
@@ -75,19 +126,19 @@ const RegisterComponent = () => {
                     dropDownContainerStyle={{ borderColor: 'transparent', elevation: 10, marginTop: 15, maxWidth: '100%', shadowColor: '#000',
                     shadowOffset: { width: 0, height: 1 },
                     shadowOpacity: 0.4,
-                    shadowRadius: 2, zIndex: 1 }}
+                    shadowRadius: 2}}
                     style={{ borderColor: 'transparent', elevation: 10, borderRadius: 0, maxWidth: '100%', shadowColor: '#000',
                     shadowOffset: { width: 0, height: 1 },
                     shadowOpacity: 0.4, marginTop: 10,
-                    shadowRadius: 2,zIndex: 1  }}
+                    shadowRadius: 2 }}
                 />
             </View>
             </View>
 
             <CollapsibleView title={
                 <View>
-                <Text style={{ color: "black", fontSize: 18, marginTop: 10, marginLeft: 10 }}>Bag Information</Text>
-                <Text style={{ color: '#04BBFF', marginTop: 10, marginLeft: 10  }}>10 Bags assigned</Text>
+                <Text style={{ color: "black", fontSize: 15, marginTop: 10, marginLeft: 10 }}>Bag Information</Text>
+                <Text style={{ color: '#04BBFF', marginTop: 6, marginLeft: 10, fontSize: 12  }}>10 Bags assigned</Text>
                 </View>}
                     collapsibleContainerStyle = {{ backgroundColor: '#dff6ff', }} 
                     style = {{backgroundColor: '#dff6ff', borderColor: 'transparent', elevation: 10, marginTop: 15, maxWidth: '100%', shadowColor: '#000',
@@ -96,7 +147,26 @@ const RegisterComponent = () => {
                     shadowRadius: 2, borderRadius: 5, alignItems: 'flex-start', padding: 10}}
                     arrowStyling={{ size: 20, rounded: true, thickness: 4, color: "#04BBFF"}}
                 >
-      <Text style={{marginTop: 20}}>hey there!</Text>
+                    <View  style={{ flexDirection: 'row', flexWrap:'wrap', marginTop: 10}}>
+
+                    {initialArr.map((data) => {
+                        return (
+                            <>
+                            <View style={{flexDirection: 'row', backgroundColor: '#fff', flexBasis: '45%', paddingLeft: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 10, marginTop: 10}}>
+                            <View>
+                            <Image source={require('../../assets/icons/qrsample.png')} style={{height: 40, width: 40}} />
+                            </View>
+                            <View style={{marginLeft: 10, marginTop: 5}}>
+                            <Text>10987643</Text>
+                        <Text style={{fontSize: 10, marginTop: 2}}>50 Sheets</Text>
+                            </View>
+                        </View>
+                        <View style={{flexBasis: '5%'}}></View>
+                            </>
+
+                        );
+                    })}
+                    </View>
     </CollapsibleView>
 
     <View style={{padding: 10}}>

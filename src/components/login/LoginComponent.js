@@ -27,6 +27,10 @@ export default class LoginComponent extends Component {
           </LinearGradient>
         </TouchableOpacity>
 
+        <Text style={styles.disclaim}>
+        By signing in to this app, you agree to the GradFirst End User License Agreement and GradFirst Terms of Service and Honor Code and you acknowledge that GradFirst and each member process your personal data in accordance with the Privacy Policy.
+        </Text>
+
       </SafeAreaView>
     )
   }
@@ -81,12 +85,19 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 50,
     textAlignVertical: 'center',
-    marginTop: 20
+    marginTop: 30
   },
   btn: {
     alignItems: 'center',
     textAlign: 'center',
     color: '#fff',
     fontWeight: 'bold'
+  },
+  disclaim: {
+    fontSize: 11,
+    padding: 10,
+    color: '#000',
+    lineHeight: 16,
+    marginTop: 10
   }
 });

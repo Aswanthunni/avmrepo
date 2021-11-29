@@ -2,12 +2,25 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, SafeAreaView, TextInput, View } from 'react-native';
 import { SvgUri, WithLocalSvg } from 'react-native-svg';
 import LinearGradient from 'react-native-linear-gradient';
+import { Header } from 'react-native-elements';
 
 export default class HomeComponent extends Component {
 
   render() {
     return (
       <SafeAreaView style={styles.container}>
+      <Header 
+        placement="left"
+        leftComponent={{ icon: 'menu', color: '#fff' }}
+        centerComponent={{ text: 'ASM', style: { color: '#fff', fontWeight: 'bold', fontSize: 18 } }}
+        ViewComponent={LinearGradient} // Don't forget this!
+        linearGradientProps={{
+          colors: ['#9324a3', '#008fc4'],
+          start:{ y: 0.0, x: 1.0 },
+          end: { x: 0.0, y: 1.0 },
+        }}
+        containerStyle={{marginTop:Platform.OS === 'ios' ? -50 : 10}}
+      />
         <Text style={[styles.welcomeText, styles.mrt1]}>Hello,</Text>
         <Text style={styles.welcomeText}>John Doe!</Text>
         <Text style={styles.actionText}>Here are Suggested Actions for You</Text>
@@ -45,7 +58,7 @@ const styles = StyleSheet.create({
   card: {
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.8,
+    shadowOpacity: 0.5,
     shadowRadius: 2,
     elevation: 5,
     borderRadius: 15,

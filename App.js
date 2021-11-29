@@ -6,6 +6,9 @@ import HomeComponent from './src/components/Home/HomeComponent';
 import RegisterComponent from './src/components/Register/RegisterComponent';
 import ScanComponent from './src/components/Scan/ScanComponent';
 import ImageCaptureComponent from './src/components/ImageCapture/ImageCaptureComponent';
+import BagItemListComponent from './src/components/List/BagItemListComponent';
+import ProfileComponent from './src/components/Profile/ProfileComponent';
+import ViewSheetComponent from './src/components/ViewSheet/ViewSheetComponent'; 
 
 const Stack = createNativeStackNavigator();
 
@@ -15,12 +18,44 @@ class App extends Component {
       <NavigationContainer>
         <Stack.Navigator>
         <Stack.Screen
-            name="Register"
-            component={RegisterComponent}
-            options={{
-              title: 'Register',
-            }}
+            name="Home"
+            component={HomeComponent}
+            options={{headerShown:false}}
           />
+        <Stack.Screen
+            name="Profile"
+            component={ProfileComponent}
+            options={{headerShown:false}}
+          />
+        <Stack.Screen
+            name="ViewSheet"
+            component={ViewSheetComponent}
+            options={{headerShown:false}}
+          />
+        <Stack.Screen
+            name="BagList"
+            component={BagItemListComponent}
+            options={{headerShown:false}}
+          />
+        <Stack.Screen
+            name="Register"
+            component={RegisterComponent} 
+            options={{headerShown:false}}
+          />
+        <Stack.Screen
+            name="Login"
+            component={LoginComponent}
+            options={{headerShown:false}}
+          />
+        <Stack.Screen
+            name="Scan"
+            component={ScanComponent}
+            options={{headerShown:false}}
+          />
+
+
+
+
         <Stack.Screen
             name="ImageCapture"
             component={ImageCaptureComponent}
@@ -28,25 +63,10 @@ class App extends Component {
               title: 'ImageCapture',
             }}
           />
-        <Stack.Screen
-            name="Scan"
-            component={ScanComponent}
-            options={{
-              title: 'Scan',
-            }}
-          />
-        <Stack.Screen
-            name="Home"
-            component={HomeComponent}
-            options={{
-              title: 'intelliExams',
-            }}
-          />
-           <Stack.Screen
-            name="Login"
-            component={LoginComponent}
-            options={{headerShown:false}}
-          />
+
+
+
+          
         </Stack.Navigator>
       </NavigationContainer>
     );
