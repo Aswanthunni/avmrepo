@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, SafeAreaView, Image, View } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, Image, View , TouchableOpacity} from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
 import LinearGradient from 'react-native-linear-gradient';
 import { Header } from 'react-native-elements';
@@ -12,6 +12,22 @@ export default class BagItemListComponent extends Component {
         this.state = {
             open: false,
         };
+    }
+
+    goBack ()  {
+        this.props.navigation.goBack(null);
+      }
+  
+    onScan() {
+        this.props.navigation.navigate('Scan');
+    }
+
+    onCapture() {
+        this.props.navigation.navigate('ImageCapture');
+    }
+
+    onImageClick() {
+        this.props.navigation.navigate('ViewSheet');
     }
 
     render() {
@@ -31,7 +47,7 @@ export default class BagItemListComponent extends Component {
             <SafeAreaView style={styles.container}>
                 <Header
                     placement="left"
-                    leftComponent={{ icon: 'menu', color: '#fff' }}
+                    leftComponent={{ icon: 'chevron-left', color: '#fff', onPress:() => this.goBack() }}
                     centerComponent={{ text: 'Bag 123456', style: { color: '#fff', fontWeight: 'bold', fontSize: 18 } }}
                     ViewComponent={LinearGradient} // Don't forget this!
                     linearGradientProps={{
@@ -87,9 +103,9 @@ export default class BagItemListComponent extends Component {
                 <View style={{ flexDirection: 'row', flexWrap:'wrap'}}>
                 {initialArr.map((data) => {
          return (
-            <View style={{alignItems: 'center', flexBasis: '25%', marginTop: 10 }} key={data.id}>
+            <TouchableOpacity style={{alignItems: 'center', flexBasis: '25%', marginTop: 10 }} key={data.id} onPress={() =>  this.onImageClick()}>
             <Image source={require('../../assets/icons/Image7.png')} />
-        </View>
+        </TouchableOpacity>
          );
       })}
                 </View>
@@ -108,7 +124,7 @@ export default class BagItemListComponent extends Component {
 >
   <SpeedDial.Action
     title="Capture Facing Sheet"
-    onPress={() => console.log('Add Something')}
+    onPress={() => this.onCapture()}
     icon={{ name: 'add', color: '#fff' }}
     ViewComponent={LinearGradient}
     linearGradientProps={{
@@ -120,7 +136,7 @@ export default class BagItemListComponent extends Component {
   />
   <SpeedDial.Action
     title="Scan Bag"
-    onPress={() => console.log('Delete Something')}
+    onPress={() => this.onScan()}
     icon={{ name: 'add', color: '#fff' }}
     ViewComponent={LinearGradient}
     linearGradientProps={{

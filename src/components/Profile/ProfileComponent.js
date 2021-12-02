@@ -19,7 +19,7 @@ export default class ProfileComponent extends Component {
     render() {
         return (
             <SafeAreaView style={styles.container}>
-                                  <Header 
+                                  {/* <Header 
         placement="left"
         leftComponent={{ icon: 'menu', color: '#fff' }}
         centerComponent={{ text: 'Profile', style: { color: '#fff', fontWeight: 'bold', fontSize: 18 } }}
@@ -30,7 +30,7 @@ export default class ProfileComponent extends Component {
           end: { x: 0.0, y: 1.0 },
         }}
         containerStyle={{marginTop:Platform.OS === 'ios' ? -50 : 10}}
-      />
+      /> */}
                 <View style={styles.card}>
                 <WithLocalSvg style={{ marginTop: '-12%'}}
                 asset={require('../../assets/icons/profile.svg')}

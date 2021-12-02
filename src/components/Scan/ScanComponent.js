@@ -5,20 +5,28 @@ import { RNCamera } from 'react-native-camera';
 import { Header } from 'react-native-elements';
 import LinearGradient from 'react-native-linear-gradient';
 
-const ScanComponent = () => {
+const ScanComponent = ({navigation}) => {
 
     const onSuccess = e => {
-        alert(e.data);
+      onReg();
         setTimeout(() => {
             this.scanner.reactivate()
         }, 2000);
     };
 
+    function goBack ()  {
+      navigation.goBack(null);
+    }
+
+    function onReg() {
+      navigation.navigate('ImageCapture');
+    }
+
     return (
         <SafeAreaView style={styles.container}>
                   <Header 
         placement="left"
-        leftComponent={{ icon: 'chevron-left', color: '#fff', size: 40}}
+        leftComponent={{ icon: 'chevron-left', color: '#fff', size: 40, onPress:() => goBack()}}
         centerComponent={{ text: 'Scan Bag', style: { color: '#fff', fontWeight: 'bold', fontSize: 18, marginTop: '2.5%' } }}
         ViewComponent={LinearGradient} // Don't forget this!
         linearGradientProps={{
@@ -40,7 +48,7 @@ const ScanComponent = () => {
       </View>
       <View style={styles.card}>
       <Text style={{marginLeft: 12}}>Enter Manually</Text>
-        <TextInput
+        <TextInput onBlur={onReg}
           style={styles.input}
         />
       </View>

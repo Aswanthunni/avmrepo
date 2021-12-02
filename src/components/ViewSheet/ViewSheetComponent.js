@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, SafeAreaView, Image, View } from 'react-native';
+import { StyleSheet, Text, SafeAreaView, Image, View, Modal, TouchableOpacity, Pressable } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
 import LinearGradient from 'react-native-linear-gradient';
 import { Header } from 'react-native-elements';
@@ -11,8 +11,18 @@ export default class ViewSheetComponent extends Component {
         super(props);
         this.state = {
             open: false,
+            modalVisible: false,
         };
     }
+
+    showSlider(bool) {
+        this.setState({ modalVisible: bool });
+    };
+
+    goBack ()  {
+        this.props.navigation.goBack(null);
+      }
+  
 
     render() {
         initialArr = [
@@ -31,7 +41,7 @@ export default class ViewSheetComponent extends Component {
             <SafeAreaView style={styles.container}>
                 <Header
                     placement="left"
-                    leftComponent={{ icon: 'menu', color: '#fff' }}
+                    leftComponent={{ icon: 'chevron-left', color: '#fff', onPress:() => this.goBack() }}
                     centerComponent={{ text: 'Bag 123456', style: { color: '#fff', fontWeight: 'bold', fontSize: 18 } }}
                     ViewComponent={LinearGradient} // Don't forget this!
                     linearGradientProps={{
@@ -96,16 +106,17 @@ export default class ViewSheetComponent extends Component {
                             />
                                 <Text style={{marginLeft: 10}}>Re-Capture</Text>
                             </View>
-                            <View style={{flexBasis: '50%',  alignItems: 'center', flexDirection:'row', justifyContent: 'center'}}>
+                            <TouchableOpacity style={{flexBasis: '50%',  alignItems: 'center', flexDirection:'row', justifyContent: 'center'}}>
                             <Icon
                                 style={{ color: 'red', marginTop: -2, textAlign: 'center' }}
                                 name='close'
                                 color='#008fc4'
                                 size={19}
                                 activeOpacity={0.5}
+                                
                             />
                                 <Text style={{textAlign: 'center', marginLeft: 10 }}>Delete</Text>
-                            </View>
+                            </TouchableOpacity>
                             </View>
                  
                  <Icon
@@ -113,8 +124,33 @@ export default class ViewSheetComponent extends Component {
                                 name='expand'
                                 size={18}
                                 activeOpacity={0.5}
+                                onPress={() => this.showSlider(true)}
                             />
                  </View>
+                 <View style={styles.centeredView}>
+        <Modal
+          animationType="slide"
+          transparent={true}
+          visible={this.state.modalVisible}
+          onRequestClose={() => {
+            Alert.alert("Modal has been closed.");
+            this.showSlider(false)
+          }}
+        >
+          <View style={styles.centeredView}>
+            <View style={styles.modalView}>
+            <Image source={{ uri: 'https://img.jagranjosh.com/imported/images/E/Articles/JEE_Main_OMR_tips.jpg' }} style={styles.preview1}></Image>
+              <Pressable
+                style={[styles.button, styles.buttonClose]}
+                onPress={() => this.showSlider(false)}
+              >
+                  <Text>Close</Text>
+              </Pressable>
+            </View>
+          </View>
+        </Modal>
+      </View>
+
             </SafeAreaView>
         )
     }
@@ -162,4 +198,43 @@ const styles = StyleSheet.create({
         flex: 1,
         resizeMode: 'stretch'
     },
+    preview1: {
+        width: '100%',
+        height: '80%',
+        resizeMode: 'stretch',
+    },
+    centeredView: {
+
+      },
+      modalView: {
+          marginTop: 50,
+        backgroundColor: "white",
+        borderRadius: 20,
+        padding: 10,
+        alignItems: "center",
+        shadowColor: "#000",
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5
+      },
+      button: {
+        borderRadius: 20,
+        padding: 10,
+        elevation: 2
+      },
+      buttonOpen: {
+        backgroundColor: "#F194FF",
+      },
+      buttonClose: {
+        backgroundColor: "#2196F3",
+      },
+      textStyle: {
+        color: "white",
+        fontWeight: "bold",
+        textAlign: "center"
+      },
+      modalText: {
+        marginBottom: 15,
+        textAlign: "center"
+      }
 });

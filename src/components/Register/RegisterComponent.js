@@ -7,7 +7,7 @@ import CollapsibleView from "@eliav2/react-native-collapsible-view";
 import LinearGradient from 'react-native-linear-gradient';
 import { Header } from 'react-native-elements';
 
-const RegisterComponent = () => {
+const RegisterComponent = ({navigation}) => {
 
     const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
 
@@ -27,17 +27,10 @@ const RegisterComponent = () => {
     const [open, setOpen] = useState(false);
     const [value, setValue] = useState(null);
     const [items, setItems] = useState([
-        { label: 'Apple', value: 'apple' },
-        { label: 'Banana', value: 'banana' }
+        { label: 'Maths', value: 'maths' },
+        { label: 'Science', value: 'science' }
     ]);
 
-    const onSuccess = e => {
-        alert(e.data);
-        setTimeout(() => {
-            this.scanner.reactivate()
-        }, 2000);
-      };
-    
       const initialArr = [
         {
           id: 1,
@@ -76,11 +69,23 @@ const RegisterComponent = () => {
           }
       ];
 
+      function goBack ()  {
+        navigation.goBack(null);
+      }
+
+      function onReg() {
+        navigation.navigate('Scan');
+      }
+
+      function itemonReg() {
+        navigation.navigate('BagList');
+    }
+
     return (
         <SafeAreaView style={styles.container}>
                   <Header 
         placement="left"
-        leftComponent={{ icon: 'menu', color: '#fff' }}
+        leftComponent={{ icon: 'chevron-left', color: '#fff', onPress:() => goBack() }}
         centerComponent={{ text: 'Answer Script Registration', style: { color: '#fff', fontWeight: 'bold', fontSize: 18 } }}
         ViewComponent={LinearGradient} // Don't forget this!
         linearGradientProps={{
@@ -152,7 +157,7 @@ const RegisterComponent = () => {
                     {initialArr.map((data) => {
                         return (
                             <>
-                            <View style={{flexDirection: 'row', backgroundColor: '#fff', flexBasis: '45%', paddingLeft: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 10, marginTop: 10}}>
+                            <TouchableOpacity style={{flexDirection: 'row', backgroundColor: '#fff', flexBasis: '45%', paddingLeft: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 10, marginTop: 10}} onPress={itemonReg}>
                             <View>
                             <Image source={require('../../assets/icons/qrsample.png')} style={{height: 40, width: 40}} />
                             </View>
@@ -160,7 +165,7 @@ const RegisterComponent = () => {
                             <Text>10987643</Text>
                         <Text style={{fontSize: 10, marginTop: 2}}>50 Sheets</Text>
                             </View>
-                        </View>
+                        </TouchableOpacity>
                         <View style={{flexBasis: '5%'}}></View>
                             </>
 
@@ -170,7 +175,7 @@ const RegisterComponent = () => {
     </CollapsibleView>
 
     <View style={{padding: 10}}>
-                <TouchableOpacity style={styles.wrapper}>
+                <TouchableOpacity style={styles.wrapper} onPress={onReg}>
           <LinearGradient colors={['#008fc4', '#9324a3']} style={styles.gradient} start={{ y: 0.0, x: 0.0 }} end={{ y: 0.0, x: 1.0 }}>
             <Text style={styles.btn}>Start Registration</Text>
           </LinearGradient>

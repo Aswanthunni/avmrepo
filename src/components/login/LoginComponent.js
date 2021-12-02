@@ -5,6 +5,10 @@ import LinearGradient from 'react-native-linear-gradient';
 
 export default class LoginComponent extends Component {
 
+  onSignIn() {
+    this.props.navigation.navigate('Root');
+  }
+
   render() {
     return (
       <SafeAreaView style={styles.container}>
@@ -21,7 +25,7 @@ export default class LoginComponent extends Component {
           style={styles.input}
         />
         <Text style={styles.forgot}>Forgot your password?</Text>
-        <TouchableOpacity style={styles.wrapper}>
+        <TouchableOpacity style={styles.wrapper} onPress={() => this.onSignIn()}>
           <LinearGradient colors={['#008fc4', '#9324a3']} style={styles.gradient} start={{ y: 0.0, x: 0.0 }} end={{ y: 0.0, x: 1.0 }}>
             <Text style={styles.btn}>Sign In</Text>
           </LinearGradient>
