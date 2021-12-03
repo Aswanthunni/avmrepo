@@ -98,7 +98,7 @@ const RegisterComponent = ({navigation}) => {
             <View style={{
         padding: 10}}>
             <View style={{marginTop: 10}}>
-                <Text>Exam Date</Text>
+                <Text style={{color: '#000'}}>Exam Date</Text>
                 <Pressable onPress={showDatePicker}  style={{marginTop: 10}}>
                     <View pointerEvents="none" style={styles.passwordContainer}>
                         <TextInput style={styles.input} value="12-30-2190" />
@@ -112,11 +112,11 @@ const RegisterComponent = ({navigation}) => {
                 </Pressable>
             </View>
             <View  style={{marginTop: 10}}>
-                <Text>Exam Series</Text>
+                <Text style={{color: '#000'}}>Exam Series</Text>
                 <TextInput style={styles.input2} value="Mid-Term Sem V" />
             </View>
             <View  style={{marginTop: 10, zIndex: 99999999999}}>
-                <Text>Subject</Text>
+                <Text style={{color: '#000'}}>Subject</Text>
                 <DropDownPicker
                     dropDownDirection = "TOP"
                     open={open}
@@ -161,9 +161,9 @@ const RegisterComponent = ({navigation}) => {
                             <View>
                             <Image source={require('../../assets/icons/qrsample.png')} style={{height: 40, width: 40}} />
                             </View>
-                            <View style={{marginLeft: 10, marginTop: 5}}>
-                            <Text>10987643</Text>
-                        <Text style={{fontSize: 10, marginTop: 2}}>50 Sheets</Text>
+                            <View style={{marginLeft: 10, marginTop:Platform.OS === 'ios' ? 5 : 0}}>
+                            <Text style={{color: '#000'}}>10987643</Text>
+                        <Text style={{fontSize: 10, marginTop: 2, color: '#000'}}>50 Sheets</Text>
                             </View>
                         </TouchableOpacity>
                         <View style={{flexBasis: '5%'}}></View>

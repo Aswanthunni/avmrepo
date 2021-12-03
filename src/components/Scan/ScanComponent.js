@@ -5,12 +5,12 @@ import { RNCamera } from 'react-native-camera';
 import { Header } from 'react-native-elements';
 import LinearGradient from 'react-native-linear-gradient';
 
-const ScanComponent = ({navigation}) => {
+const ScanComponent = ({navigation, scanner}) => {
 
     const onSuccess = e => {
       onReg();
         setTimeout(() => {
-            this.scanner.reactivate()
+            scanner.reactivate()
         }, 2000);
     };
 
@@ -34,20 +34,20 @@ const ScanComponent = ({navigation}) => {
           start:{ y: 0.0, x: 1.0 },
           end: { x: 0.0, y: 1.0 },
         }}
-        containerStyle={{marginTop:Platform.OS === 'ios' ? -50 : 10}}
+        containerStyle={{marginTop:Platform.OS === 'ios' ? -50 : 0}}
       />
       
-      <View style={{height: '65%'}}>
+      <View style={{height: '65%', marginTop:Platform.OS === 'ios' ? 0 : 20}}>
       <QRCodeScanner
                 onRead={onSuccess}
-                ref={(node) => { this.scanner = node }}
+                ref={(node) => { scanner = node }}
                 flashMode={RNCamera.Constants.FlashMode.auto}
                 showMarker= {true}
-                cameraStyle={{height: '100%'}}
+                cameraStyle={{height: '100%', width: '100%'}}
             />
       </View>
       <View style={styles.card}>
-      <Text style={{marginLeft: 12}}>Enter Manually</Text>
+      <Text style={{marginLeft: 12, color: '#000',}}>Enter Manually</Text>
         <TextInput onBlur={onReg}
           style={styles.input}
         />
@@ -61,7 +61,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#EBFDFF',
         height: '100%',
-        padding: 10
     },
     card: {
         shadowColor: '#000',

@@ -81,15 +81,16 @@ export default class ImageCaptureComponent extends Component {
                             />
                         </SafeAreaView>
                     ) :
-                    <View>
-                        <View style={{ height: '90%', width: '100%' }}>
+                    <View style={{height: '100%'}}>
+                        <View style={{ height: '80%', width: '100%' }}>
                             <Image source={{ uri: this.state.uri }} style={styles.preview}></Image>
                         </View>
                         <View style={{
                             flexDirection: 'row', marginTop: 20,
                             flexDirection: 'row',
                             alignItems: 'center',
-                            justifyContent: 'center'
+                            justifyContent: 'center',
+
                         }}>
                             <Icon
                                 style={{ flexBasis: '50%', textAlign: 'center' }}

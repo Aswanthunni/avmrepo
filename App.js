@@ -11,9 +11,11 @@ import ProfileComponent from './src/components/Profile/ProfileComponent';
 import ViewSheetComponent from './src/components/ViewSheet/ViewSheetComponent';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import LinearGradient from 'react-native-linear-gradient';
+import {LogBox } from 'react-native';
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
+LogBox.ignoreLogs(['Reanimated 2']);
 class App extends Component {
   render() {
     return (

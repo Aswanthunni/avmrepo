@@ -61,32 +61,32 @@ export default class ViewSheetComponent extends Component {
 
                         <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
                             <View >
-                                <Text>Bag ID: </Text>
+                                <Text style={styles.colorDefault}>Bag ID: </Text>
                             </View>
                             <View >
-                                <Text numberOfLines={1}>12345</Text>
+                                <Text numberOfLines={1} style={styles.colorDefault}>12345</Text>
                             </View>
                         </View>
 
                         <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
                             <View style={{}}>
-                                <Text>Exam Series: </Text>
+                                <Text style={styles.colorDefault}>Exam Series: </Text>
                             </View>
                             <View >
-                                <Text numberOfLines={1}>Mid-term Sem-V</Text>
-                            </View>
-                        </View>
-                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
-                            <View >
-                                <Text>Subject: </Text>
-                            </View>
-                            <View >
-                                <Text numberOfLines={1}>Math</Text>
+                                <Text numberOfLines={1} style={styles.colorDefault}>Mid-term Sem-V</Text>
                             </View>
                         </View>
                         <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
                             <View >
-                                <Text>No. of Sheets: </Text>
+                                <Text style={styles.colorDefault}>Subject: </Text>
+                            </View>
+                            <View >
+                                <Text numberOfLines={1} style={styles.colorDefault}>Math</Text>
+                            </View>
+                        </View>
+                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+                            <View >
+                                <Text style={styles.colorDefault}>No. of Sheets: </Text>
                             </View>
                             <View >
                                 <Text numberOfLines={1} style={{ marginLeft: 'auto', color: 'green' }}>50</Text>
@@ -104,7 +104,7 @@ export default class ViewSheetComponent extends Component {
                                 size={18}
                                 activeOpacity={0.5}
                             />
-                                <Text style={{marginLeft: 10}}>Re-Capture</Text>
+                                <Text style={{marginLeft: 10, color: '#000'}}>Re-Capture</Text>
                             </View>
                             <TouchableOpacity style={{flexBasis: '50%',  alignItems: 'center', flexDirection:'row', justifyContent: 'center'}}>
                             <Icon
@@ -115,7 +115,7 @@ export default class ViewSheetComponent extends Component {
                                 activeOpacity={0.5}
                                 
                             />
-                                <Text style={{textAlign: 'center', marginLeft: 10 }}>Delete</Text>
+                                <Text style={{textAlign: 'center', marginLeft: 10, color: '#000' }}>Delete</Text>
                             </TouchableOpacity>
                             </View>
                  
@@ -123,6 +123,7 @@ export default class ViewSheetComponent extends Component {
                                 style={{ position: 'absolute', right: 0, marginRight: '3%', marginTop: '5%'}}
                                 name='expand'
                                 size={18}
+                                color='#000'
                                 activeOpacity={0.5}
                                 onPress={() => this.showSlider(true)}
                             />
@@ -236,5 +237,8 @@ const styles = StyleSheet.create({
       modalText: {
         marginBottom: 15,
         textAlign: "center"
+      },
+      colorDefault: {
+          color: '#000'
       }
 });

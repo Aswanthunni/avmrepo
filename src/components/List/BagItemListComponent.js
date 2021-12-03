@@ -4,6 +4,7 @@ import QRCode from 'react-native-qrcode-svg';
 import LinearGradient from 'react-native-linear-gradient';
 import { Header } from 'react-native-elements';
 import { SpeedDial } from 'react-native-elements';
+import { color } from 'react-native-reanimated';
 
 export default class BagItemListComponent extends Component {
 
@@ -14,6 +15,19 @@ export default class BagItemListComponent extends Component {
         };
     }
 
+    initialArr = [
+        {
+          id: 1,
+          color: "blue",
+          text: "text1"
+        },
+        {
+          id: 2,
+          color: "red",
+          text: "text2"
+        }
+      ];
+      
     goBack ()  {
         this.props.navigation.goBack(null);
       }
@@ -31,18 +45,6 @@ export default class BagItemListComponent extends Component {
     }
 
     render() {
-        initialArr = [
-            {
-              id: 1,
-              color: "blue",
-              text: "text1"
-            },
-            {
-              id: 2,
-              color: "red",
-              text: "text2"
-            }
-          ];
         return (
             <SafeAreaView style={styles.container}>
                 <Header
@@ -67,32 +69,32 @@ export default class BagItemListComponent extends Component {
 
                         <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
                             <View >
-                                <Text>Bag ID: </Text>
+                                <Text style={styles.colorDefault}>Bag ID: </Text>
                             </View>
                             <View >
-                                <Text numberOfLines={1}>12345</Text>
+                                <Text numberOfLines={1} style={styles.colorDefault}>12345</Text>
                             </View>
                         </View>
 
                         <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
                             <View style={{}}>
-                                <Text>Exam Series: </Text>
+                                <Text style={styles.colorDefault}>Exam Series: </Text>
                             </View>
                             <View >
-                                <Text numberOfLines={1}>Mid-term Sem-V</Text>
-                            </View>
-                        </View>
-                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
-                            <View >
-                                <Text>Subject: </Text>
-                            </View>
-                            <View >
-                                <Text numberOfLines={1}>Math</Text>
+                                <Text numberOfLines={1} style={styles.colorDefault}>Mid-term Sem-V</Text>
                             </View>
                         </View>
                         <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
                             <View >
-                                <Text>No. of Sheets: </Text>
+                                <Text style={styles.colorDefault}>Subject: </Text>
+                            </View>
+                            <View >
+                                <Text numberOfLines={1} style={styles.colorDefault}>Math</Text>
+                            </View>
+                        </View>
+                        <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
+                            <View >
+                                <Text style={styles.colorDefault}>No. of Sheets: </Text>
                             </View>
                             <View >
                                 <Text numberOfLines={1} style={{ marginLeft: 'auto', color: 'green' }}>50</Text>
@@ -101,7 +103,7 @@ export default class BagItemListComponent extends Component {
                     </View>
                 </View>
                 <View style={{ flexDirection: 'row', flexWrap:'wrap'}}>
-                {initialArr.map((data) => {
+                {this.initialArr.map((data) => {
          return (
             <TouchableOpacity style={{alignItems: 'center', flexBasis: '25%', marginTop: 10 }} key={data.id} onPress={() =>  this.onImageClick()}>
             <Image source={require('../../assets/icons/Image7.png')} />
@@ -187,5 +189,8 @@ const styles = StyleSheet.create({
         flex: 4,
         flexDirection: 'row',
         justifyContent: 'center' 
+    },
+    colorDefault: {
+        color: '#000'
     }
 });

@@ -36,14 +36,14 @@ export default class ProfileComponent extends Component {
                 asset={require('../../assets/icons/profile.svg')}
               />
                     <View style={{flexDirection: 'row', marginTop: 15}}>
-                        <Text>John Doe</Text>
+                        <Text style={styles.defaultColor}>John Doe</Text>
                         <Badge value="Invigilator" badgeStyle={{backgroundColor: '#9324a3', borderRadius: 6, marginLeft: 5}}/>
                     </View>
                     <View style={{marginTop: 5}}>
-                        <Text>Designation</Text>
+                        <Text style={styles.defaultColor}>Designation</Text>
                     </View>
                     <View style={{marginTop: 5}}>
-                        <Text>Identification Number</Text>
+                        <Text style={styles.defaultColor}>Identification Number</Text>
                     </View>
                     <View style={{marginTop: 10}}>
                         <QRCode
@@ -58,7 +58,7 @@ export default class ProfileComponent extends Component {
                                 activeOpacity={0.5}
                             />
                     
-                        <Text style={{marginLeft: 8}}>Share</Text>
+                        <Text style={{marginLeft: 8, color: '#000'}}>Share</Text>
                         </View>
                 </View>
             </SafeAreaView>
@@ -85,5 +85,8 @@ const styles = StyleSheet.create({
         margin: '4%',
         alignItems: 'center',
         marginTop: '18%'
+    },
+    defaultColor: {
+        color: '#000'
     }
 })

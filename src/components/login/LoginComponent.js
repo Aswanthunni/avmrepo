@@ -65,11 +65,13 @@ const styles = StyleSheet.create({
     margin: 12,
     borderWidth: 0,
     padding: 10,
-    backgroundColor: '#fff'
+    backgroundColor: '#fff',
+    color: '#000'
   },
   emalLabel: {
     fontSize: 11,
-    paddingLeft: 11
+    paddingLeft: 11,
+    color: '#000'
   },
   forgot: {
     fontSize: 9,
