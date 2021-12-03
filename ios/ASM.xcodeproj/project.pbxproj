@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* IntelliEXAMSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* IntelliEXAMSTests.m */; };
+		00E356F31AD99517003FC87E /* ASMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ASMTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		59EB53BD6F81AD72E9F1C42B /* libPods-IntelliEXAMS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABC11695BF00B8CBEECC46F /* libPods-IntelliEXAMS.a */; };
+		59EB53BD6F81AD72E9F1C42B /* libPods-ASM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABC11695BF00B8CBEECC46F /* libPods-ASM.a */; };
 		66CE7A4E30EC43AF86417B20 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 683E3915DC4A49CBBC9E62C4 /* Raleway-Regular.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		AA2ACD77148042A4B4C21116 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E275868CAE9E4387B9D2B386 /* Raleway-Bold.ttf */; };
 		B78939D1F2A44CB88F93D3A3 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B013F34440D34937AD306DF5 /* Roboto-Medium.ttf */; };
-		E15494A18CD4BD0055708F83 /* libPods-IntelliEXAMS-IntelliEXAMSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA2F00AF28CA1AB3F137E51 /* libPods-IntelliEXAMS-IntelliEXAMSTests.a */; };
+		E15494A18CD4BD0055708F83 /* libPods-ASM-ASMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA2F00AF28CA1AB3F137E51 /* libPods-ASM-ASMTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,21 +25,21 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = IntelliEXAMS;
+			remoteInfo = ASM;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* IntelliEXAMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelliEXAMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* ASMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* IntelliEXAMSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntelliEXAMSTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* IntelliEXAMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelliEXAMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = IntelliEXAMS/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = IntelliEXAMS/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = IntelliEXAMS/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = IntelliEXAMS/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IntelliEXAMS/main.m; sourceTree = "<group>"; };
-		1ABC11695BF00B8CBEECC46F /* libPods-IntelliEXAMS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntelliEXAMS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F21AD99517003FC87E /* ASMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASMTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* ASM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ASM/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ASM/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ASM/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ASM/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ASM/main.m; sourceTree = "<group>"; };
+		1ABC11695BF00B8CBEECC46F /* libPods-ASM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23827C01354C4ECBACA0B74F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		277245F07BA44166B7A93E02 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		3530518981054E32A9C982F8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
@@ -47,20 +47,20 @@
 		534F36251C23487880B49244 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		683E3915DC4A49CBBC9E62C4 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Regular.ttf"; path = "../src/assets/fonts/Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		70DC6FFC79F64DD99CB35B8A /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		70E6D1662FBD76601F4783C2 /* Pods-IntelliEXAMS-IntelliEXAMSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliEXAMS-IntelliEXAMSTests.release.xcconfig"; path = "Target Support Files/Pods-IntelliEXAMS-IntelliEXAMSTests/Pods-IntelliEXAMS-IntelliEXAMSTests.release.xcconfig"; sourceTree = "<group>"; };
+		70E6D1662FBD76601F4783C2 /* Pods-ASM-ASMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASM-ASMTests.release.xcconfig"; path = "Target Support Files/Pods-ASM-ASMTests/Pods-ASM-ASMTests.release.xcconfig"; sourceTree = "<group>"; };
 		785240DCAAF24C1A80A0918D /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		7D29B79B82B549F985C3A2E1 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		7EA2F00AF28CA1AB3F137E51 /* libPods-IntelliEXAMS-IntelliEXAMSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntelliEXAMS-IntelliEXAMSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EA2F00AF28CA1AB3F137E51 /* libPods-ASM-ASMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASM-ASMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A68D95071E4F358163A07A /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = IntelliEXAMS/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ASM/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9996405B5DD14DFFA0BE7F97 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		AA196B6FE564432D8956D922 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		B013F34440D34937AD306DF5 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		B1897F4B7A564835A4EF29F4 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		B7ED7983D6782254B15E3A83 /* Pods-IntelliEXAMS-IntelliEXAMSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliEXAMS-IntelliEXAMSTests.debug.xcconfig"; path = "Target Support Files/Pods-IntelliEXAMS-IntelliEXAMSTests/Pods-IntelliEXAMS-IntelliEXAMSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7ED7983D6782254B15E3A83 /* Pods-ASM-ASMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASM-ASMTests.debug.xcconfig"; path = "Target Support Files/Pods-ASM-ASMTests/Pods-ASM-ASMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D35C29C5484243F08A738026 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		D765DCA6E37F28859AC3F517 /* Pods-IntelliEXAMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliEXAMS.release.xcconfig"; path = "Target Support Files/Pods-IntelliEXAMS/Pods-IntelliEXAMS.release.xcconfig"; sourceTree = "<group>"; };
-		DD56180B478160CF0FD8D2AA /* Pods-IntelliEXAMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelliEXAMS.debug.xcconfig"; path = "Target Support Files/Pods-IntelliEXAMS/Pods-IntelliEXAMS.debug.xcconfig"; sourceTree = "<group>"; };
+		D765DCA6E37F28859AC3F517 /* Pods-ASM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASM.release.xcconfig"; path = "Target Support Files/Pods-ASM/Pods-ASM.release.xcconfig"; sourceTree = "<group>"; };
+		DD56180B478160CF0FD8D2AA /* Pods-ASM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASM.debug.xcconfig"; path = "Target Support Files/Pods-ASM/Pods-ASM.debug.xcconfig"; sourceTree = "<group>"; };
 		E275868CAE9E4387B9D2B386 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Raleway-Bold.ttf"; path = "../src/assets/fonts/Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		EAAB6077363B47E8B6EF15E5 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E15494A18CD4BD0055708F83 /* libPods-IntelliEXAMS-IntelliEXAMSTests.a in Frameworks */,
+				E15494A18CD4BD0055708F83 /* libPods-ASM-ASMTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,20 +81,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59EB53BD6F81AD72E9F1C42B /* libPods-IntelliEXAMS.a in Frameworks */,
+				59EB53BD6F81AD72E9F1C42B /* libPods-ASM.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* IntelliEXAMSTests */ = {
+		00E356EF1AD99517003FC87E /* ASMTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* IntelliEXAMSTests.m */,
+				00E356F21AD99517003FC87E /* ASMTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = IntelliEXAMSTests;
+			path = ASMTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -105,7 +105,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* IntelliEXAMS */ = {
+		13B07FAE1A68108700A75B9A /* ASM */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -115,15 +115,15 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = IntelliEXAMS;
+			name = ASM;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				1ABC11695BF00B8CBEECC46F /* libPods-IntelliEXAMS.a */,
-				7EA2F00AF28CA1AB3F137E51 /* libPods-IntelliEXAMS-IntelliEXAMSTests.a */,
+				1ABC11695BF00B8CBEECC46F /* libPods-ASM.a */,
+				7EA2F00AF28CA1AB3F137E51 /* libPods-ASM-ASMTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,10 +131,10 @@
 		347BEBE950C220ABE4B08D64 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DD56180B478160CF0FD8D2AA /* Pods-IntelliEXAMS.debug.xcconfig */,
-				D765DCA6E37F28859AC3F517 /* Pods-IntelliEXAMS.release.xcconfig */,
-				B7ED7983D6782254B15E3A83 /* Pods-IntelliEXAMS-IntelliEXAMSTests.debug.xcconfig */,
-				70E6D1662FBD76601F4783C2 /* Pods-IntelliEXAMS-IntelliEXAMSTests.release.xcconfig */,
+				DD56180B478160CF0FD8D2AA /* Pods-ASM.debug.xcconfig */,
+				D765DCA6E37F28859AC3F517 /* Pods-ASM.release.xcconfig */,
+				B7ED7983D6782254B15E3A83 /* Pods-ASM-ASMTests.debug.xcconfig */,
+				70E6D1662FBD76601F4783C2 /* Pods-ASM-ASMTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -175,9 +175,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* IntelliEXAMS */,
+				13B07FAE1A68108700A75B9A /* ASM */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* IntelliEXAMSTests */,
+				00E356EF1AD99517003FC87E /* ASMTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				347BEBE950C220ABE4B08D64 /* Pods */,
@@ -191,8 +191,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* IntelliEXAMS.app */,
-				00E356EE1AD99517003FC87E /* IntelliEXAMSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* ASM.app */,
+				00E356EE1AD99517003FC87E /* ASMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,9 +200,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* IntelliEXAMSTests */ = {
+		00E356ED1AD99517003FC87E /* ASMTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "IntelliEXAMSTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ASMTests" */;
 			buildPhases = (
 				9980264B8CB20120E55019A4 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -216,14 +216,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = IntelliEXAMSTests;
-			productName = IntelliEXAMSTests;
-			productReference = 00E356EE1AD99517003FC87E /* IntelliEXAMSTests.xctest */;
+			name = ASMTests;
+			productName = ASMTests;
+			productReference = 00E356EE1AD99517003FC87E /* ASMTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* IntelliEXAMS */ = {
+		13B07F861A680F5B00A75B9A /* ASM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "IntelliEXAMS" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ASM" */;
 			buildPhases = (
 				F671C6AA7808F82ACAA37C9D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -238,9 +238,9 @@
 			);
 			dependencies = (
 			);
-			name = IntelliEXAMS;
-			productName = IntelliEXAMS;
-			productReference = 13B07F961A680F5B00A75B9A /* IntelliEXAMS.app */;
+			name = ASM;
+			productName = ASM;
+			productReference = 13B07F961A680F5B00A75B9A /* ASM.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -260,7 +260,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "IntelliEXAMS" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ASM" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -273,8 +273,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* IntelliEXAMS */,
-				00E356ED1AD99517003FC87E /* IntelliEXAMSTests */,
+				13B07F861A680F5B00A75B9A /* ASM */,
+				00E356ED1AD99517003FC87E /* ASMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -322,15 +322,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS/Pods-IntelliEXAMS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ASM/Pods-ASM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS/Pods-IntelliEXAMS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ASM/Pods-ASM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS/Pods-IntelliEXAMS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ASM/Pods-ASM-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		324F173475998F86CE0CE913 /* [CP] Copy Pods Resources */ = {
@@ -339,15 +339,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS-IntelliEXAMSTests/Pods-IntelliEXAMS-IntelliEXAMSTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ASM-ASMTests/Pods-ASM-ASMTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS-IntelliEXAMSTests/Pods-IntelliEXAMS-IntelliEXAMSTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ASM-ASMTests/Pods-ASM-ASMTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS-IntelliEXAMSTests/Pods-IntelliEXAMS-IntelliEXAMSTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ASM-ASMTests/Pods-ASM-ASMTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4438D14FC9B1DE62D5AAD54E /* [CP] Copy Pods Resources */ = {
@@ -356,15 +356,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS/Pods-IntelliEXAMS-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ASM/Pods-ASM-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS/Pods-IntelliEXAMS-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ASM/Pods-ASM-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS/Pods-IntelliEXAMS-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ASM/Pods-ASM-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7D69857798C9414939E8E14C /* [CP] Embed Pods Frameworks */ = {
@@ -373,15 +373,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS-IntelliEXAMSTests/Pods-IntelliEXAMS-IntelliEXAMSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ASM-ASMTests/Pods-ASM-ASMTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS-IntelliEXAMSTests/Pods-IntelliEXAMS-IntelliEXAMSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ASM-ASMTests/Pods-ASM-ASMTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IntelliEXAMS-IntelliEXAMSTests/Pods-IntelliEXAMS-IntelliEXAMSTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ASM-ASMTests/Pods-ASM-ASMTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9980264B8CB20120E55019A4 /* [CP] Check Pods Manifest.lock */ = {
@@ -399,7 +399,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IntelliEXAMS-IntelliEXAMSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ASM-ASMTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -421,7 +421,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-IntelliEXAMS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ASM-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -454,7 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* IntelliEXAMSTests.m in Sources */,
+				00E356F31AD99517003FC87E /* ASMTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,7 +472,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* IntelliEXAMS */;
+			target = 13B07F861A680F5B00A75B9A /* ASM */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -480,14 +480,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7ED7983D6782254B15E3A83 /* Pods-IntelliEXAMS-IntelliEXAMSTests.debug.xcconfig */;
+			baseConfigurationReference = B7ED7983D6782254B15E3A83 /* Pods-ASM-ASMTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = IntelliEXAMSTests/Info.plist;
+				INFOPLIST_FILE = ASMTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -501,17 +501,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliEXAMS.app/IntelliEXAMS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASM.app/ASM";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70E6D1662FBD76601F4783C2 /* Pods-IntelliEXAMS-IntelliEXAMSTests.release.xcconfig */;
+			baseConfigurationReference = 70E6D1662FBD76601F4783C2 /* Pods-ASM-ASMTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = IntelliEXAMSTests/Info.plist;
+				INFOPLIST_FILE = ASMTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -525,20 +525,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IntelliEXAMS.app/IntelliEXAMS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASM.app/ASM";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD56180B478160CF0FD8D2AA /* Pods-IntelliEXAMS.debug.xcconfig */;
+			baseConfigurationReference = DD56180B478160CF0FD8D2AA /* Pods-ASM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = IntelliEXAMS/Info.plist;
+				INFOPLIST_FILE = ASM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,7 +549,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = IntelliEXAMS;
+				PRODUCT_NAME = ASM;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -558,13 +558,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D765DCA6E37F28859AC3F517 /* Pods-IntelliEXAMS.release.xcconfig */;
+			baseConfigurationReference = D765DCA6E37F28859AC3F517 /* Pods-ASM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = IntelliEXAMS/Info.plist;
+				INFOPLIST_FILE = ASM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,7 +575,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = IntelliEXAMS;
+				PRODUCT_NAME = ASM;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -711,7 +711,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "IntelliEXAMSTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ASMTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -720,7 +720,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "IntelliEXAMS" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ASM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -729,7 +729,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "IntelliEXAMS" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ASM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
